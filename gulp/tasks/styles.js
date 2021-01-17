@@ -11,7 +11,7 @@ const cssnano = require('cssnano');
 const stylesModule = () => {
     const plugins = [
         autoprefixer({
-            overrideBrowserslist: ['last 4 version'],
+            overrideBrowserslist: ['last 2 version'],
             cascade: false,
         }),
     ];

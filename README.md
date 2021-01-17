@@ -1,10 +1,10 @@
 # surface-1
 
-Stay & Ski is a Landing page.
+Surface-1 is a Landing page.
 
 ## Installation
 
-Clone this repo to your local machine using https://github.com/AleksandrPuhov/stay-and-ski.git
+Clone this repo to your local machine using https://github.com/AleksandrPuhov/surface-1.git
 
 Use the npm package manager.
 
