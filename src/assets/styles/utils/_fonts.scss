@@ -9,40 +9,26 @@
     }
 }
 
-@include font-face('proxima-nova', '../fonts/proximanova-light', 300, 'normal');
-
 @include font-face(
-    'proxima-nova',
-    '../fonts/proximanova-regular',
+    'LibreBaskerville',
+    '../fonts/LibreBaskerville-Regular',
     400,
     'normal'
 );
 
 @include font-face(
-    'proxima-nova',
-    '../fonts/proximanova-semibold',
-    600,
+    'LibreBaskerville',
+    '../fonts/LibreBaskerville-Bold',
+    700,
     'normal'
 );
 
-@include font-face('proxima-nova', '../fonts/proximanova-bold', 700, 'normal');
-
-@mixin proxima-nova-light {
-    font-family: 'proxima-nova', 'sans-serif';
-    font-weight: 300;
-}
-
-@mixin proxima-nova {
-    font-family: 'proxima-nova', 'sans-serif';
+@mixin LibreBaskerville {
+    font-family: 'LibreBaskerville', 'serif';
     font-weight: 400;
 }
 
-@mixin proxima-nova-semibold {
-    font-family: 'proxima-nova', 'sans-serif';
-    font-weight: 600;
-}
-
-@mixin proxima-nova-bold {
-    font-family: 'proxima-nova', 'sans-serif';
+@mixin LibreBaskerville-bold {
+    font-family: 'LibreBaskerville', 'serif';
     font-weight: 700;
 }

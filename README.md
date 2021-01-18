@@ -1,10 +1,10 @@
-# surface-1
+# Organic
 
-Surface-1 is a Landing page.
+Organic is a multi-page project.
 
 ## Installation
 
-Clone this repo to your local machine using https://github.com/AleksandrPuhov/surface-1.git
+Clone this repo to your local machine using https://github.com/AleksandrPuhov/Organic.git
 
 Use the npm package manager.
 
