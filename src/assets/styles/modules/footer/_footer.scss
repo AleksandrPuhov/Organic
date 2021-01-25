@@ -1,2 +1,49 @@
 .footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 71% 100%;
+    position: relative;
+    //height: 453px;
+    color: $textColorSecond;
+    font-size: 14px;
+
+    &-about {
+        &__img {
+        }
+        &__text {
+        }
+        &__copyright {
+        }
+    }
+    &-information {
+        &__title {
+        }
+        &__list {
+        }
+        &__item {
+        }
+        &__ref {
+        }
+    }
+    &-follow {
+        &__title {
+        }
+        &__list {
+            display: flex;
+        }
+        &__item {
+        }
+        &__ref {
+            &-icon {
+                height: 30px;
+                width: 30px;
+                fill: $textColorSecond;
+                transition: $transitionTime;
+
+                &:hover {
+                    fill: $colorMain;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,28 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        & + & {
+            margin: 0 0 0 50px;
+        }
+    }
+    &__ref {
+        color: $textColorMain;
+        display: block;
+        padding: 5px 10px;
+        border-bottom: 2px solid transparent;
+        transition: $transitionTime;
+
+        &:hover {
+            border-bottom: 2px solid $colorMain;
+        }
+    }
+    &__btn {
+        min-width: 140px;
+    }
+    &__burger {
+        display: none;
+    }
+}

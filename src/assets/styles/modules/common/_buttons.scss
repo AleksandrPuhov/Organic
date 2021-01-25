@@ -1,2 +1,15 @@
 .btn {
+    color: $textColorMain;
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid $colorMain;
+    transition: $transitionTime;
+    border-radius: 10px;
+
+    &:hover {
+        color: $textColorSecond;
+        background-color: $colorMain;
+    }
 }

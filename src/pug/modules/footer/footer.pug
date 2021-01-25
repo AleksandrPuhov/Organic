@@ -1,2 +1,35 @@
-footer.footer
-    p footer
+footer.footer(style="background-image:url(./assets/images/footer-bg.png)")
+    .footer-inner.wrapper
+        .footer-about
+            img.footer-about__img(src='./assets/images/logo-white.svg' alt='Logo')
+            p.footer-about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            p.footer-about__copyright &#169 Copyright 2020 Nature
+        .footer-information
+            h4.footer-information__title Information
+            ul.footer-information__list
+                li.footer-information__item
+                    a.footer-information__ref(href="products.html") Products
+                li.footer-information__item
+                    a.footer-information__ref(href="blog.html") Blog
+                li.footer-information__item
+                    a.footer-information__ref(href="about.html") About Us
+                li.footer-information__item
+                    a.footer-information__ref(href="contact.html") Contact
+                li.footer-information__item
+                    a.footer-information__ref(href="" target="_blank") Terms of Service
+        .footer-follow
+            h4.footer-follow__title Follow Us
+            ul.footer-follow__list
+                li.footer-follow__item
+                    a.footer-follow__ref(href="" target="_blank")
+                        +icon("facebook","footer-follow__ref-icon")
+                li.footer-follow__item
+                    a.footer-follow__ref(href="" target="_blank")
+                        +icon("linkedin","footer-follow__ref-icon")
+                li.footer-follow__item
+                    a.footer-follow__ref(href="" target="_blank")
+                        +icon("twitter","footer-follow__ref-icon")
+                li.footer-follow__item
+                    a.footer-follow__ref(href="" target="_blank")
+                        +icon("instagram","footer-follow__ref-icon")
+

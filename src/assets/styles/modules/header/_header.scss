@@ -1,2 +1,12 @@
 .header {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+    }
+    &__logo {
+    }
+    &__nav {
+    }
 }
