@@ -1,28 +1,74 @@
 .footer {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 71% 100%;
+    background-position: 71% 0%;
     position: relative;
-    //height: 453px;
     color: $textColorSecond;
     font-size: 14px;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 50px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 55px;
+            position: absolute;
+            z-index: 1;
+            background-color: $colorMain;
+            left: 0;
+            bottom: 0;
+        }
+    }
 
     &-about {
         &__img {
         }
         &__text {
+            max-width: 370px;
+            margin: 50px 0 40px;
         }
         &__copyright {
+            padding-top: 10px;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 75px;
+                position: absolute;
+                z-index: 1;
+                background-color: $colorMain;
+                left: 0;
+                top: 0;
+            }
         }
     }
     &-information {
+        margin: 0 20px;
         &__title {
         }
         &__list {
         }
-        &__item {
+        &__item:not(:first-child) {
+            margin-top: 15px;
         }
         &__ref {
+            color: $textColorSecond;
+            transition: $transitionTime;
+            &:hover {
+                color: $colorMain;
+            }
         }
     }
     &-follow {
@@ -31,7 +77,8 @@
         &__list {
             display: flex;
         }
-        &__item {
+        &__item:not(:first-child) {
+            margin-left: 20px;
         }
         &__ref {
             &-icon {
