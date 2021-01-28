@@ -14,6 +14,8 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     color: $textColorMain;
+    position: relative;
+    z-index: 0;
 }
 
 body,
@@ -83,4 +85,5 @@ button {
     margin: 0 auto;
     position: relative;
     max-width: 1110px;
+    height: 100%;
 }
