@@ -1,0 +1,40 @@
+.presented {
+    background-color: $sectionBgColor;
+    &-inner {
+        padding: 80px 0 40px;
+        text-align: center;
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__slider {
+        max-width: 850px;
+        margin: 60px auto 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &-pagination {
+            margin: 70px 0 0;
+            .swiper-pagination-bullet {
+                background-color: $textColorMain;
+                &-active,
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+        }
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+        &-img {
+            max-height: 100%;
+        }
+    }
+}

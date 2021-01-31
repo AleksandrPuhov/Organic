@@ -1,0 +1,28 @@
+.swiper {
+    &-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+    }
+    &-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        .swiper-pagination-bullet {
+            height: 12px;
+            width: 12px;
+            border-radius: 100%;
+            display: block;
+            cursor: pointer;
+            transition: $transitionTime;
+            margin: 0 8px;
+        }
+    }
+}

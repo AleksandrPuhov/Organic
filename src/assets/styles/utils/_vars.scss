@@ -1,27 +1,23 @@
 $transitionTime: 0.3s;
 
 $colorMain: #00dbd0;
+$colorMainSecond: #f1fefe;
+
+$colorMainAlpha: rgba(
+    $color: $colorMain,
+    $alpha: 0.25,
+);
+
 $textColorMain: #374b5c;
+$textColorMainAlpha: rgba(
+    $color: $textColorMain,
+    $alpha: 0.8,
+);
+
 $textColorSecond: #ffffff;
+$sectionBgColor: #fbfefe;
 
-$bodyGradient: linear-gradient(180deg, #f1fefe, #ffffff);
-
-// $colorBodyBg: #f7f7f7;
-// $titleColorDark: #333333;
-// $textColorDark: #565656;
-
-// $headerColorTitle: rgba(
-//     $color: #5799e6,
-//     $alpha: 0.4,
-// );
-// $headerColorSubtitle: rgba(
-//     $color: #69a0cd,
-//     $alpha: 0.8,
-// );
-// $headerColorNav: #4779aa;
-// $headerColorNavMobile: #69a0cd;
-
-// $footerColorText: #ffffff;
+$bodyGradient: linear-gradient(180deg, $colorMainSecond, $textColorSecond);
 
 // $phoneSize: 400px;
 // $phabletSize: 560px;

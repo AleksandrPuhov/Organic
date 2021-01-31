@@ -1,0 +1,65 @@
+.contacts {
+    height: 100vh;
+    z-index: 1;
+    &-inner {
+        padding: 100px 0 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+    }
+    &__text-2 {
+        margin: 10px auto;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 50px auto 0;
+        &-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                'first last'
+                'email tel'
+                'message message';
+
+            grid-column-gap: 40px;
+            grid-row-gap: 25px;
+        }
+        &-first {
+            grid-area: first;
+        }
+        &-last {
+            grid-area: last;
+        }
+        &-email {
+            grid-area: email;
+        }
+        &-tel {
+            grid-area: tel;
+        }
+        &-message {
+            grid-area: message;
+        }
+
+        &-input,
+        &-textarea {
+            border: 2px solid $colorMain;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: transparent;
+        }
+
+        &-textarea {
+            height: 170px;
+        }
+
+        &-btn {
+            align-self: flex-end;
+            margin-top: 25px;
+        }
+    }
+}

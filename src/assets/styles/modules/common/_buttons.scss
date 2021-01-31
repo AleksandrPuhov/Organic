@@ -1,15 +1,26 @@
 .btn {
-    color: $textColorMain;
     text-align: center;
     display: block;
     padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid $colorMain;
-    transition: $transitionTime;
     border-radius: 10px;
+    border: 2px solid $colorMain;
+    cursor: pointer;
+    transition: $transitionTime;
 
-    &:hover {
-        color: $textColorSecond;
+    &--ref {
+        background-color: transparent;
+        color: $textColorMain;
+        &:hover {
+            color: $textColorSecond;
+            background-color: $colorMain;
+        }
+    }
+    &--form {
         background-color: $colorMain;
+        color: $textColorSecond;
+        &:hover {
+            color: $textColorMain;
+            background-color: transparent;
+        }
     }
 }
