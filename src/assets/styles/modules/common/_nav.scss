@@ -3,10 +3,8 @@
         display: flex;
         align-items: center;
     }
-    &__item {
-        & + & {
-            margin: 0 0 0 50px;
-        }
+    &__item:not(:first-child) {
+        margin: 0 0 0 50px;
     }
     &__ref {
         color: $textColorMain;
@@ -24,5 +22,10 @@
     }
     &__burger {
         display: none;
+    }
+    @media screen and (max-width: $tabletWideSize) {
+        &__item:not(:first-child) {
+            margin: 0 0 0 20px;
+        }
     }
 }

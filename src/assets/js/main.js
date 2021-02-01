@@ -1,13 +1,25 @@
 const headerElement = document.getElementById('header');
+const postsList = document.getElementById('posts__list');
+const postsBtn = document.getElementById('posts__btn');
 
 const presentedSwiper = new Swiper('.presented__slider', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
-    slidesPerGroup: 4,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     pagination: {
         el: '.presented__slider-pagination',
         clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 2,
+        },
+        1000: {
+            slidesPerView: 4,
+            slidesPerGroup: 2,
+        },
     },
 });
 const testimonialSwiper = new Swiper('.testimonial__slider', {
@@ -27,6 +39,18 @@ const navScroll = () => {
     }
 };
 
+const postsShow = () => {
+    postsList.querySelectorAll('.posts__list-item--hidden').forEach((el) => {
+        el.classList.remove('posts__list-item--hidden');
+    });
+};
+
 window.addEventListener('scroll', () => {
     navScroll();
 });
+
+if (postsBtn) {
+    postsBtn.addEventListener('click', () => {
+        postsShow();
+    });
+}

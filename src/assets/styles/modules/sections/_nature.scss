@@ -27,4 +27,10 @@
         font-weight: bold;
         max-width: 220px;
     }
+    @media screen and (max-width: $desktopWideSize) {
+        background-position: 600px 100%;
+    }
+    @media screen and (max-width: $tabletWideSize) {
+        background-position: 420px 100%;
+    }
 }

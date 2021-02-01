@@ -1,0 +1,32 @@
+.posts {
+    &-inner {
+        padding: 200px 0 90px;
+        text-align: center;
+    }
+    &__title {
+    }
+    &__title {
+    }
+    &__text-2 {
+        margin: 10px auto;
+    }
+    &__list {
+        display: flex;
+        margin: 80px -10px 0;
+        flex-wrap: wrap;
+        &-item {
+            flex-basis: 33.333%;
+            padding: 15px 10px;
+
+            &--hidden {
+                display: none;
+            }
+        }
+    }
+    &__card {
+    }
+    &__btn {
+        margin: 60px auto 0;
+        width: 160px;
+    }
+}

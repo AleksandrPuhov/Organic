@@ -8,7 +8,7 @@
             z-index: 1;
         }
         &-left {
-            top: 50%;
+            top: 53%;
             left: 0;
             width: 400px;
         }
@@ -85,6 +85,22 @@
         }
         &:hover &-text {
             text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: $desktopWideSize) {
+        &-bg-img {
+            &-left,
+            &-right {
+                width: 22vw;
+            }
+        }
+    }
+    @media screen and (max-width: $tabletWideSize) {
+        &-bg-img {
+            &-left,
+            &-right {
+                display: none;
+            }
         }
     }
 }
