@@ -38,4 +38,18 @@
             }
         }
     }
+    @media screen and (max-width: $tabletSmallSize) {
+        &__form {
+            &-input {
+                padding: 20px 30px;
+            }
+            &-btn {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 15px 0;
+                width: 100%;
+            }
+        }
+    }
 }

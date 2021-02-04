@@ -37,7 +37,8 @@
                 border: 1px solid $colorMain;
 
                 &-active,
-                &:hover {
+                &:hover,
+                &:active {
                     background-color: $colorMain;
                 }
             }
@@ -83,7 +84,8 @@
         &-text {
             line-height: 40px;
         }
-        &:hover &-text {
+        &:hover &-text,
+        &:active &-text {
             text-decoration: underline;
         }
     }

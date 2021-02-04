@@ -1,6 +1,8 @@
 const headerElement = document.getElementById('header');
 const postsList = document.getElementById('posts__list');
 const postsBtn = document.getElementById('posts__btn');
+const headerNavBurger = document.getElementById('nav-burger');
+const headerNav = document.getElementById('main-nav');
 
 const presentedSwiper = new Swiper('.presented__slider', {
     direction: 'horizontal',
@@ -22,6 +24,7 @@ const presentedSwiper = new Swiper('.presented__slider', {
         },
     },
 });
+
 const testimonialSwiper = new Swiper('.testimonial__slider', {
     direction: 'horizontal',
     loop: true,
@@ -44,6 +47,11 @@ const postsShow = () => {
         el.classList.remove('posts__list-item--hidden');
     });
 };
+
+headerNavBurger.addEventListener('click', () => {
+    headerNav.classList.toggle('nav--active');
+    document.body.classList.toggle('lock');
+});
 
 window.addEventListener('scroll', () => {
     navScroll();

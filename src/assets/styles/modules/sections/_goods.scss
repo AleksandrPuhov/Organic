@@ -3,8 +3,6 @@
         padding: 200px 0 90px;
         text-align: center;
     }
-    &__title {
-    }
     &__text-2 {
         margin: 10px auto;
     }
@@ -15,6 +13,22 @@
         &-item {
             flex-basis: 33.333%;
             padding: 15px 10px;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        &__list {
+            &-item {
+                flex-basis: 50%;
+            }
+        }
+    }
+    @media screen and (max-width: $tabletSmallSize) {
+        &__list {
+            max-width: 350px;
+            margin: 0 auto;
+            &-item {
+                flex-basis: 100%;
+            }
         }
     }
 }

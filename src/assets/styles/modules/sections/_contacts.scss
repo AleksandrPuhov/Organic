@@ -8,18 +8,18 @@
         flex-direction: column;
         justify-content: center;
     }
-    &__title {
-    }
     &__text-2 {
         margin: 10px auto;
     }
     &__form {
         display: flex;
         flex-direction: column;
+        width: 100%;
         max-width: 600px;
         margin: 50px auto 0;
         &-inner {
             display: grid;
+            width: 100%;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
                 'first last'
@@ -51,6 +51,7 @@
             border-radius: 10px;
             padding: 10px 20px;
             background-color: transparent;
+            width: inherit;
         }
 
         &-textarea {
@@ -60,6 +61,25 @@
         &-btn {
             align-self: flex-end;
             margin-top: 25px;
+        }
+    }
+    @media screen and (max-width: $tabletSmallSize) {
+        height: auto;
+        &-inner {
+            padding: 200px 0 50px;
+        }
+        &__form {
+            &-inner {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'first'
+                    'last'
+                    'email'
+                    'tel'
+                    'message';
+                grid-column-gap: 0;
+                grid-row-gap: 15px;
+            }
         }
     }
 }

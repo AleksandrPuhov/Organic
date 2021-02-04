@@ -10,7 +10,8 @@
     &--ref {
         background-color: transparent;
         color: $textColorMain;
-        &:hover {
+        &:hover,
+        &:active {
             color: $textColorSecond;
             background-color: $colorMain;
         }
@@ -18,7 +19,8 @@
     &--form {
         background-color: $colorMain;
         color: $textColorSecond;
-        &:hover {
+        &:hover,
+        &:active {
             color: $textColorMain;
             background-color: transparent;
         }

@@ -18,6 +18,12 @@ body {
     z-index: 0;
 }
 
+@media screen and (max-width: $tabletSize) {
+    .lock {
+        overflow: hidden;
+    }
+}
+
 body,
 h1,
 h2,

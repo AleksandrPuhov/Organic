@@ -32,8 +32,6 @@
     }
 
     &-about {
-        &__img {
-        }
         &__text {
             max-width: 370px;
             margin: 50px 0 40px;
@@ -56,24 +54,19 @@
     }
     &-information {
         margin: 0 20px;
-        &__title {
-        }
-        &__list {
-        }
         &__item:not(:first-child) {
             margin-top: 15px;
         }
         &__ref {
             color: $textColorSecond;
             transition: $transitionTime;
-            &:hover {
+            &:hover,
+            &:active {
                 color: $colorMain;
             }
         }
     }
     &-follow {
-        &__title {
-        }
         &__list {
             display: flex;
         }
@@ -87,9 +80,30 @@
                 fill: $textColorSecond;
                 transition: $transitionTime;
 
-                &:hover {
+                &:hover,
+                &:active {
                     fill: $colorMain;
                 }
+            }
+        }
+    }
+
+    @media screen and (max-width: $tabletSize) {
+        &-inner {
+            flex-direction: column;
+            padding: 100px 0 30px;
+        }
+
+        &-about {
+            &__text {
+                margin: 20px 0 15px;
+            }
+        }
+
+        &-information {
+            margin: 40px 0;
+            &__item:not(:first-child) {
+                margin-top: 10px;
             }
         }
     }

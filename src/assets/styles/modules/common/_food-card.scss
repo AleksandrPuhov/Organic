@@ -26,15 +26,19 @@
         color: $textColorMain;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         border: 0.5px solid $colorMain;
         background-color: $colorMain;
     }
-    &:hover &__img-icon {
+    &:hover &__img-icon,
+    &:active &__img-icon {
         fill: $textColorSecond;
     }
     &:hover &__title,
-    &:hover &__text {
+    &:hover &__text,
+    &:active &__title,
+    &:active &__text {
         color: $textColorSecond;
     }
 }
